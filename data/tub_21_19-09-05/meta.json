@@ -1,0 +1,1 @@
+{"inputs": ["cam/image_array_a", "cam/image_array_b", "user/angle", "user/throttle", "user/mode", "imu/acl_x", "imu/acl_y", "imu/acl_z", "imu/gyr_x", "imu/gyr_y", "imu/gyr_z"], "types": ["image_array", "lossless_image_array", "float", "float", "str", "float", "float", "float", "float", "float", "float"], "start": 1567747743.7986948}

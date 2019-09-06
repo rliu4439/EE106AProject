@@ -149,7 +149,7 @@ def drive(cfg, model_path=None, use_joystick=False, ee106a=False, model_type=Non
         #of managing steering, throttle, and modes, and more.
         ctr = LQRController()
     
-    V.add(ctr, inputs=['cam/image_array_a', 'cam/image_array_b'],outputs=['user/angle', 'user/throttle', 'user/mode', 'recording'], threaded=True)
+    V.add(ctr, inputs=['cam/image_array_a', 'cam/image_array_b','imu/acl_x', 'imu/acl_y', 'imu/acl_z', 'imu/gyr_x', 'imu/gyr_y', 'imu/gyr_z'],outputs=['user/angle', 'user/throttle', 'user/mode', 'recording'], threaded=True)
 
     #this throttle filter will allow one tap back for esc reverse
     th_filter = ThrottleFilter()
@@ -373,21 +373,21 @@ def drive(cfg, model_path=None, use_joystick=False, ee106a=False, model_type=Non
             return
 
         #this part will signal visual LED, if connected
-        V.add(FileWatcher(model_path, verbose=True), outputs=['modelfile/modified'])
+        # V.add(FileWatcher(model_path, verbose=True), outputs=['modelfile/modified'])
 
         #these parts will reload the model file, but only when ai is running so we don't interrupt user driving
-        V.add(FileWatcher(model_path), outputs=['modelfile/dirty'], run_condition="ai_running")
-        V.add(DelayedTrigger(100), inputs=['modelfile/dirty'], outputs=['modelfile/reload'], run_condition="ai_running")
-        V.add(TriggeredCallback(model_path, model_reload_cb), inputs=["modelfile/reload"], run_condition="ai_running")
+        # V.add(FileWatcher(model_path), outputs=['modelfile/dirty'], run_condition="ai_running")
+        # V.add(DelayedTrigger(100), inputs=['modelfile/dirty'], outputs=['modelfile/reload'], run_condition="ai_running")
+        # V.add(TriggeredCallback(model_path, model_reload_cb), inputs=["modelfile/reload"], run_condition="ai_running")
 
         outputs=['pilot/angle', 'pilot/throttle']
 
         if cfg.TRAIN_LOCALIZER:
             outputs.append("pilot/loc")
     
-        V.add(kl, inputs=inputs, 
-            outputs=outputs,
-            run_condition='run_pilot')            
+        # V.add(kl, inputs=inputs, 
+        #     outputs=outputs,
+        #     run_condition='run_pilot')            
     
     #Choose what inputs should change the car.
     class DriveMode:
