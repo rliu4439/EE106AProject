@@ -138,7 +138,8 @@ def drive(cfg, model_path=None, use_joystick=False, ee106a=False, model_type=Non
             V.add(netwkJs, threaded=True)
             ctr.js = netwkJs
 
-    else:        
+    else:   
+        #Call this for LQRControl     
         #This web controller will create a web server that is capable
         #of managing steering, throttle, and modes, and more.
         ctr = LQRController()
