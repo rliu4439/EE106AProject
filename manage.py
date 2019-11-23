@@ -25,7 +25,6 @@ import irmark1 as m1
 from irmark1.parts.transform import Lambda, TriggeredCallback, DelayedTrigger
 from irmark1.parts.datastore import TubHandler
 from irmark1.parts.controller import LocalWebController, JoystickController
-from irmark1.parts.LQRController import LQRController
 from irmark1.parts.throttle_filter import ThrottleFilter
 from irmark1.parts.behavior import BehaviorPart
 from irmark1.parts.file_watcher import FileWatcher
@@ -42,6 +41,12 @@ def drive(cfg, model_path=None, use_joystick=False, ee106a=False, model_type=Non
     Parts may have named outputs and inputs. The framework handles passing named outputs
     to parts requesting the same named input.
     '''
+
+    import sys
+
+    sys.path.insert(1,"/home/irg/projects/EE106a/IRG/irmark1/parts/LQRController")
+    from irmark1.parts.LQRController import LQRController
+
 
     if cfg.DONKEY_GYM:
         #the simulator will use cuda and then we usually run out of resources
