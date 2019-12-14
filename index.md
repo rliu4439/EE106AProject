@@ -1,1 +1,5 @@
-## EE106A Project
+---
+title: Intro
+layout: template
+filename:index.md
+--- 
