@@ -23,11 +23,10 @@
 
     <header class="page-header" role="banner">
       <h1 class="project-name">Autonomous Racing</h1>
-      <h3 class="project-name">Group 5 </h3>
-      <h3 class="project-name">Mike Estrada, Lu Yu, Ryan Liu, Jake Ramirez, Kevin Chen</h3>
-        {% for page in site.pages %}
+
+<!--         {% for page in site.pages %}
 	     <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
-		{% endfor %}
+		{% endfor %} -->
 
 
 
@@ -39,7 +38,7 @@
       <div class="inner clearfix">
         <aside id="sidebar">
           {% for page in site.pages %}
-	     <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
+	     <a href= {{ page.filename }} class="sidelink">{{ page.title }}</a>
 		{% endfor %}
 
 

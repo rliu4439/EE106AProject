@@ -3,6 +3,8 @@ title: Introduction
 layout: template
 filename: index
 --- 
+### Group 5 
+### class="project-name">Mike Estrada, Lu Yu, Ryan Liu, Jake Ramirez, Kevin Chen
 
 # Introduction
 
@@ -13,6 +15,7 @@ filename: index
 
 
 ### Sample Video - Line Following
+
 {% include youtubePlayer.html id="9pow2xkvkpc" %}
 
 
