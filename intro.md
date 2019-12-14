@@ -1,7 +1,7 @@
 ---
-title: Introduction
+title: Design
 layout: template
-filename: intro
+filename: design
 --- 
 
-# Introduction Page
+# Design
