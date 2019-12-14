@@ -56,7 +56,7 @@ div.content {
       <h1 class="project-name">Autonomous Racing</h1>
        {% assign ppages = site.pages | sort:"order" %}
 
-        {% for page in site.ppages %}
+        {% for page in ppages %}
 	     <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
 		{% endfor %}
 
@@ -67,8 +67,8 @@ div.content {
       {% endif %}
     </header>
 	<div id="sidebar">
-		  {% for page in site.pages %}
-	     <a href= {{ page.filename }} class="sidelink">{{ page.title }}</a>
+		  {% for page in ppages %}
+	     <a href= {{ page.filename }} >{{ page.title }}</a>
 		{% endfor %}
 	</div>
 
