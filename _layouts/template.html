@@ -2,15 +2,6 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
     <meta charset="UTF-8">
 
 {% seo %}
@@ -20,13 +11,12 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-
     <header class="page-header" role="banner">
       <h1 class="project-name">Autonomous Racing</h1>
 
-<!--         {% for page in site.pages %}
+        {% for page in site.pages %}
 	     <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
-		{% endfor %} -->
+		{% endfor %}
 
 
 
@@ -34,19 +24,16 @@
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
     </header>
-
-
- <div id="content-wrapper">
+<!--  <div id="content-wrapper">
       <div class="inner clearfix">
         <aside id="sidebar">
           {% for page in site.pages %}
 	     <a href= {{ page.filename }} class="sidelink">{{ page.title }}</a>
 		{% endfor %}
      
-       </aside>
+       </aside> -->
     <main id="content" class="main-content" role="main">
-   
- {{ content }}
+ 	{{ content }}
 
     </main>
 </div>
