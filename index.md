@@ -1,7 +1,7 @@
 ---
 title: Intro
 layout: template
-filename:index.md
+filename: index.md
 --- 
 
 # Autonomous Racing
