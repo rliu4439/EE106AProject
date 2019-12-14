@@ -1,12 +1,10 @@
 ---
 title: Intro
 layout: template
-filename: index.md
+filename: index
 --- 
 
-# Autonomous Racing
-## Group 5
-## Mike Estrada, Lu Yu, Ryan Liu, Jake Ramirez, Kevin Chen
+# Introduction
 
 ## Goals
 1. Build an autonomous Traxxas RC car capable of navigating a track at high speed by using computer vision to detect lane markers and obstacles

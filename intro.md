@@ -1,7 +1,7 @@
 ---
 title: Introduction
 layout: template
-filename: intro.md
+filename: intro
 --- 
 
 # Introduction Page
