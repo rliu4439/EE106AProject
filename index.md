@@ -4,9 +4,13 @@ layout: template
 filename:index.md
 --- 
 
-## EE106A Project
+# Autonomous Racing
+## Group 5
+## Mike Estrada, Lu Yu, Ryan Liu, Jake Ramirez, Kevin Chen
 
+
+
+### Sample Video - Line following
 {% include youtubePlayer.html id="9pow2xkvkpc" %}
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9pow2xkvkpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
