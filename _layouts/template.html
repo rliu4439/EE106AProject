@@ -4,34 +4,43 @@
 
 
   	<style>
-	#outer-container {
-		display: table;
-		width: 100%;
-		height: 100%;
-	}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 
-	#sidebar {
-		display: table-cell;
-		width: 10%;
-		vertical-align: top;
-	}
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
 
-	#content {
-		display: table-cell;
-		width: 85%;
-		vertical-align: top;
-	}
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 
-	html {
-	height: 100%;
-	}
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
 
-	body {
-		margin: 0;
-		height: 100%;
-	}
-
-
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
   	</style>
 
     <meta charset="UTF-8">
@@ -57,17 +66,12 @@
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
     </header>
-    <div id="outer-container">
 	<div id="sidebar">
 		  {% for page in site.pages %}
 	     <a href= {{ page.filename }} class="sidelink">{{ page.title }}</a>
 		{% endfor %}
 	</div>
-	<div id="content">
-		test
-	</div>
 
-</div>
 <!--  <div id="content-wrapper">
       <div class="inner clearfix">
         <aside id="sidebar">
