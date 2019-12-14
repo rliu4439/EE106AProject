@@ -12,7 +12,7 @@
 
 	#sidebar {
 		display: table-cell;
-		width: 15%;
+		width: 10%;
 		vertical-align: top;
 	}
 
@@ -20,6 +20,15 @@
 		display: table-cell;
 		width: 85%;
 		vertical-align: top;
+	}
+
+	html {
+	height: 100%;
+	}
+
+	body {
+		margin: 0;
+		height: 100%;
 	}
 
 
@@ -49,15 +58,20 @@
       {% endif %}
     </header>
     <div id="outer-container">
-	<div id="sidebar"></div>
-	<div id="content"></div>
+	<div id="sidebar">
+		  {% for page in site.pages %}
+	     <a href= {{ page.filename }} class="sidelink">{{ page.title }}</a>
+		{% endfor %}
+	</div>
+	<div id="content">
+		test
+	</div>
+
 </div>
 <!--  <div id="content-wrapper">
       <div class="inner clearfix">
         <aside id="sidebar">
-          {% for page in site.pages %}
-	     <a href= {{ page.filename }} class="sidelink">{{ page.title }}</a>
-		{% endfor %}
+        
      
        </aside> -->
     <main id="content" class="main-content" role="main">
