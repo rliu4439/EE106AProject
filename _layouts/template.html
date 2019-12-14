@@ -67,7 +67,6 @@ div.content {
     </header>
 
 	<div id="sidebar" style="display: inline-grid;">
-		  <a href="#contact">Contact</a>
 		  {% for page in ppages %}
 	     <a href= {{ page.filename }} >{{ page.title }}</a>
 		{% endfor %}
