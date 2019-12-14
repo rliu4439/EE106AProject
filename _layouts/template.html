@@ -2,6 +2,29 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 
+
+  	<style>
+	#outer-container {
+		display: table;
+		width: 100%;
+		height: 100%;
+	}
+
+	#sidebar {
+		display: table-cell;
+		width: 15%;
+		vertical-align: top;
+	}
+
+	#content {
+		display: table-cell;
+		width: 85%;
+		vertical-align: top;
+	}
+
+
+  	</style>
+
     <meta charset="UTF-8">
 
 {% seo %}
@@ -13,8 +36,9 @@
   <body>
     <header class="page-header" role="banner">
       <h1 class="project-name">Autonomous Racing</h1>
+       {% assign ppages = site.pages | sort:"order" %}
 
-        {% for page in site.pages %}
+        {% for page in site.ppages %}
 	     <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
 		{% endfor %}
 
@@ -24,6 +48,10 @@
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
     </header>
+    <div id="outer-container">
+	<div id="sidebar"></div>
+	<div id="content"></div>
+</div>
 <!--  <div id="content-wrapper">
       <div class="inner clearfix">
         <aside id="sidebar">

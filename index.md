@@ -2,6 +2,7 @@
 title: Introduction
 layout: template
 filename: index
+order: 0
 --- 
 ### Group 5 
 ### Mike Estrada, Lu Yu, Ryan Liu, Jake Ramirez, Kevin Chen
@@ -16,5 +17,6 @@ filename: index
 
 ### Sample Video - Line Following
 
+{% include youtubePlayer.html id="9pow2xkvkpc" %}
 
 
