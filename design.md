@@ -24,5 +24,5 @@ The exact relationship between slip ratio and the amount of frictional force tha
 \end{equation}
 where $\mu$ is the coefficient of friction and $c_{road}$ is a parameter that depends on the condition of the road being driven on.
 Plotting this equation yields the following graph:
-<img src="images/magicformula.gif">
+<img src="images/magicformula.gif" width="480" height="auto">
 which indicates that in general, $\mu$ is maximized at a slip ratio of $\lambda=0.1$. This therefore drove the design of our traction controller to limit wheel slip ratio to a range of 0.05 to 0.15 with a desired slip ratio of 0.1.
