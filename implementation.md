@@ -8,3 +8,10 @@ order: 2
 # Implementation
 
 
+## Hardware Used and Built
+
+## Parts of Design
+
+## Software
+
+## Complete System Overview
