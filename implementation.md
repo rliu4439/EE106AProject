@@ -13,5 +13,6 @@ order: 2
 ## Parts of Design
 
 ## Software
+### Lane tracking
 
 ## Complete System Overview
