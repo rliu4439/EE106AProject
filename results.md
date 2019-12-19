@@ -16,4 +16,6 @@ order: 3
 
 {% include youtubePlayer.html id="9pow2xkvkpc" %}
 
-<iframe src="https://drive.google.com/file/d/1Npw3HFhAcBQyDwYyBB3jv5_4fp8II12X/preview" width="640" height="480"></iframe>
+### Traction Control
+
+{% include drivePlayer.html id="1Npw3HFhAcBQyDwYyBB3jv5_4fp8II12X" %}
