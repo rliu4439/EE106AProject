@@ -7,10 +7,12 @@ order: 1
 
 # Design
 
-### Traction Control
+## Traction Control
 
+### Motivation
 High performance vehicles at both the full size and RC size scales are typically limited primarily by the total amount of frictional force that their tires can provide. This friction is needed to accelerate, brake, and turn, and much research has gone into figuring out how to increase the total amount of traction available. Under high speed cornering or sudden acceleration conditions, the amount of frictional force needed to maintain static friction between the ground and the tire can exceed what the tire is able to provide. When this occurs, the tire starts sliding instead of rolling (often referred to as "wheel slip") and vehicle traction and acceleration are both lost. Traction control algorithms are designed to detect when wheel slip occurs and modulate the throttle so that the vehicle can regain traction as quickly as possible.
 
+### Existing Research
 Research into existing traction control algorithms revealed an [IEEE paper](https://ieeexplore-ieee-org.libproxy.berkeley.edu/document/6402343) titled *Model Predictive PID Traction Control Systems for Electric Vehicles* published by Tohru Kawabe. In this paper, Kawabe quantifies wheel slip using the slip ratio $\lambda$ defined as
 \begin{equation}
 \lambda = \frac{V_{\omega}V}{V_\omega}
