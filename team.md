@@ -20,3 +20,7 @@ order: 5
 ### Jake Ramirez
 
 ### Kevin Chen
+
+- **Bio**: I'm a 4th year Mechanical Engineering undergrad interested in aerospace applications, particularly space flight and exploration.
+
+- **Contributions**: My main contributions included writing the code for the traction control algorithm and testing the controller. This involved researching existing control algorithms, choosing a simple proportional controller to limit wheel slip ratio, and collecting wheel velocity data to observe the effects of the controller. I also assisted with debugging and fixing the hardware.
