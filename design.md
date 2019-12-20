@@ -19,8 +19,15 @@ We broke our goals down into several tasks we needed to perform:
 <p><img src="images/software.png" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
 
 ## Setup
+
+### Car
 <p><img src="images/car.jpg" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
 <p><img src="images/laneandcar.jpg" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
+
+### Sensing
+
+### Actuation
+
 
 ## Lane Tracking
 
