@@ -3,10 +3,15 @@ title: Design
 layout: template
 filename: design
 order: 1
-mathjax: true
 --- 
 
 # Design
+We broke our goals down into several tasks we needed to perform:
+ - Using computer vision to detect the lane markers and return the waypoints
+ - Using computer vision to detect the object and return the bounding boxs.
+ - Implementing and MPC controller and control barrier functions(CBF) to follow the track and avoid obstacles
+ - Implementing a traction control algorithm to maximize vehicle traction and acceleration
+
 ## Hardware
 we can put images of our cars and hardware design here.
 
@@ -14,19 +19,19 @@ we can put images of our cars and hardware design here.
 ## Lane Tracking
 
 ### Design Criteria
-  - The lane tracking algorithm must generate three stable waypoints on the lane for the car to navigate.
-  - The algorithm must be robust and in real time for the control algorithms.
+ - The lane tracking algorithm must generate three stable waypoints on the lane for the car to navigate.
+ - The algorithm must be robust and in real time for the control algorithms.
 
 ### Main Challenges
-  - Easy to be influenced by noisy pixels comes from other stuffs that have the similar color  as our lane.
-  - Hard to extract the outliers of lane based on the images with noises.
-  - Waypoints might shift out of the lane which leads the race car run out of the track.
-  - Image processing should be in real time.
+ - Easy to be influenced by noisy pixels comes from other stuffs that have the similar color  as our lane.
+ - Hard to extract the outliers of lane based on the images with noises.
+ - Waypoints might shift out of the lane which leads the race car run out of the track.
+ - Image processing should be in real time.
 
 ### Method Design
-  - We would use the filter based on HSV space to extract the line pixels from raw images
-  - We apply our waypoints getting algorithms based on the biggest connected component in order to remove the extra noises.
-  - We finally use a real sense API based on the camera parameters to translate the 2D waypoints into 3D which can be directly used by LQR controller.
+ - We would use the filter based on HSV space to extract the line pixels from raw images
+ - We apply our waypoints getting algorithms based on the biggest connected component in order to remove the extra noises.
+ - We finally use a real sense API based on the camera parameters to translate the 2D waypoints into 3D which can be directly used by LQR controller.
 
 
 ## Traction Control
