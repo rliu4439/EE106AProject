@@ -23,7 +23,7 @@ The software for this project was written using Python on a Linux machine.
     - Using Hough line detection algorithm to get two straight outlines of the lane.
     - Averaging over the two lines to get the middle line.
     - Selecting three 2D way points on the line.
-    <p><img src="images/pasted image 0.png" width="160" height="auto" style="display:block; margin: 0 auto" ></p> &rarr; <p><img src="images/line.png" width="160" height="auto" style="display:block; margin: 0 auto" ></p> &rarr; <p><img src="images/point.png" width="160" height="auto" style="display:block; margin: 0 auto" ></p>
+    <p><img src="images/pasted image 0.png" width="160" height="auto" style="display:block; margin: 0 auto" ></p> &rarr;<p><img src="images/line.png" width="160" height="auto" style="display:block; margin: 0 auto" ></p> &rarr;<p><img src="images/point.png" width="160" height="auto" style="display:block; margin: 0 auto" ></p>
   - 2nd method
     - Using filter function from OpenCV to extract the red(color of the lane) region from the raw image based on  HSV space.
     - Removing noisy pixels by finding the biggest connected component based on connected component labeling.
