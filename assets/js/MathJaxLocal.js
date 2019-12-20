@@ -55,4 +55,4 @@ MathJax.Hub.Config({
     }
   });
   
-//   MathJax.Ajax.loadComplete("https://idcrook.github.io/assets/js/MathJaxLocal.js");
+  MathJax.Ajax.loadComplete("https://idcrook.github.io/assets/js/MathJaxLocal.js");
