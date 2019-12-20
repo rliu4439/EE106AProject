@@ -17,6 +17,7 @@ mathjax: true
  - Digital line sensors
  - Dremel D45 3D printer
  - Custom encoder mounts and disks
+
 ## Parts of Design
 
 ## Software
@@ -72,5 +73,5 @@ The software for this project was written using Python on a Linux machine.
 - Generate 3D location of objects using the RealSense API to convert pixel coordinates and depth to a 3D coordinate
 - Output: List of centers of obstacles detected
 
-<img src="images/bounding_box_result.png" width="640" />
+<img src="images/bounding_box_result.png" width="1280" />
 ## Complete System Overview
