@@ -58,7 +58,8 @@ div.content {
        {% assign ppages = site.pages | sort:"order" %}
 
         {% for page in ppages %}
-	     <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
+       <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
+       {% include mathjax.html %}
 		{% endfor %}
 
       {% if site.github.is_project_page %}
