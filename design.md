@@ -15,6 +15,7 @@ We broke our goals down into several tasks we needed to perform:
 
 ## Hardware Architecture
 <p><img src="images/hardware.png" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
+We started with the robot open autonomous racing (ROAR) platform for the Traxxis RC car. This included the NVIDIA Jetson Nano which was our central processing for the car. The Jetson Nano recieves vision data from a RealSense D435i which was mounted on the front of the car and took in processed wheel speed data from an Arduino Nano which recieved data from the wheel encoders we designed. As vision and sensor data our coming in to the Jetson Nano it processes the optimal controll and ultimately sends PWM commands to the original Traxxis electronic speed controller.
 
 ## Software Architecture
 <p><img src="images/software.png" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
