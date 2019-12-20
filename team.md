@@ -10,9 +10,10 @@ order: 5
 
 ### Mike Estrada
 
-- **Bio**: I'm a 1st year PhD student in EECS studying control systems and Robotics.
+- **Bio**: I'm a 1st year PhD student in EECS studying Control Systems and Robotics.
 
-- **Contributions**: I had three main contributions. Firs,t I was responsible for prototyping and designing the wheel encoders and the associated arduino software in collaboration with Yuri Murakami.  This invovlved the iterative design and 3D printing of encoder disks that were install to the inside of the wheel.
+- **Contributions**: I had two main contributions to this project. First, I was responsible for prototyping and designing the wheel encoders and the associated arduino software in collaboration with Yuri Murakami.  This invovlved the iterative design and 3D printing of encoder disks that were installed on the inside of the wheels to trigger line sensors as the wheels rotated. The rate at which each sensor was triggered allowed us to estimate the velocity of the four wheels independently and average their values to get an estimate of the body velocity.Second, I was responsible for writing the LQR solver that was intended to be the core control algorithm for the project. Due to software compatability issues, this required me to reformulate the LQR problem as a quadratic program and manually write the formulation for a quadratic program solver.
+
 ### Lu Yu
 - **Bio**: I'm a 1st year EECS master student interested in robust computer vision and image processing. 
 
