@@ -30,7 +30,7 @@ The software for this project was written using Python on a Linux machine.
     - Selecting three fixed y coordinates
     - Averaging over the x coordinates with the same fixed y coordinates to get the 2D way points.
  - Using RealSense API to transform the 2D coordinates into 3D
- - Output: three 3D waypoints
+ - Output: Three 3D waypoints
   
 
 ## Complete System Overview
