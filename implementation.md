@@ -23,6 +23,7 @@ The software for this project was written using Python on a Linux machine.
     - Using Hough line detection algorithm to get two straight outlines of the lane.
     - Averaging over the two lines to get the middle line.
     - Selecting three 2D way points on the line
+    
   - 2nd method
     - 
     -
