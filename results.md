@@ -12,8 +12,12 @@ order: 3
 
 
 
-### Line Following
+## Line Following
 
 {% include youtubePlayer.html id="9pow2xkvkpc" %}
 
-### Traction Control
+## Traction Control
+
+### Example of wheel slip
+
+{% include youtubePlayer.html id="f4ebHDm4GFc"}
