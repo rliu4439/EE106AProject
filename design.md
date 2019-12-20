@@ -27,7 +27,8 @@ We started with the robot open autonomous racing (ROAR) platform for the Traxxis
 <p><img src="images/laneandcar.jpg" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
 
 ### Sensing
-
+ - Used an Intel RealSense D435i RGB-D camera to estimate coordinates of desired waypoints to send to the controller
+ - Custom designed wheel encoders used to independently estimate the velocity of all four wheels as well as the car's overall velocity
 ### Actuation
 
 
