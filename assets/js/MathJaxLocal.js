@@ -7,7 +7,7 @@ MathJax.Hub.Config({
       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
     },
     messageStyle: "none",
-    "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+    // "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
     TeX: {
       equationNumbers: { autoNumber: "AMS" },
       extensions: ["AMSmath.js", "AMSsymbols.js","AMScd.js"],
