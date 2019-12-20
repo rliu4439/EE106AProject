@@ -3,6 +3,7 @@ title: Implementation
 layout: template
 filename: implementation
 order: 2
+mathjax:true
 --- 
 
 # Implementation
