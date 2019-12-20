@@ -3,7 +3,7 @@ title: Implementation
 layout: template
 filename: implementation
 order: 2
-mathjax:true
+mathjax: true
 --- 
 
 # Implementation
@@ -62,7 +62,9 @@ The software for this project was written using Python on a Linux machine.
   <img src="images/depth_image.png" width="210" />  &rarr;
   <img src="images/depth_mask.png" width="210" />  &rarr;
   <img src="images/depth_bounding_boxes.png" width="210" />
-	- Generate 3D location of objects using the RealSense API to convert pixel coordinates and depth to a 3D coordinate
+
+- Generate 3D location of objects using the RealSense API to convert pixel coordinates and depth to a 3D coordinate
 - Output: List of centers of obstacles detected
+
 <img src="images/bounding_box_result.png" width="640" />
 ## Complete System Overview

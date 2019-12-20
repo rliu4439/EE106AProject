@@ -2,6 +2,7 @@
 title: Team
 layout: template
 filename: team
+mathjax: true
 order: 5
 --- 
 

@@ -3,7 +3,7 @@ title: Results
 layout: template
 filename: results
 order: 3
-mathjax:true
+mathjax: true
 --- 
 
 # Results

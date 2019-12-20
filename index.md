@@ -2,8 +2,8 @@
 title: Introduction
 layout: template
 filename: index
+mathjax: true
 order: 0
-mathjax:true
 --- 
 ## Group 5 
 ## Mike Estrada, Lu Yu, Ryan Liu, Jake Ramirez, Kevin Chen
