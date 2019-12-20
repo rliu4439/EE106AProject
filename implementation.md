@@ -15,7 +15,7 @@ order: 2
 ## Software
 The software for this project was written using Python on a Linux machine.
 ### Lane tracking
-- Input: video stream
+- Input: Video stream
 - Get 2D way points:
   - 1st method
     - Using filter function from OpenCV to extract the red(color of the lane) region from the raw image based on  HSV space
