@@ -17,7 +17,6 @@ mathjax: true
  - Digital line sensors
  - Dremel D45 3D printer
  - Custom encoder mounts and disks
- - 
 ## Parts of Design
 
 ## Software
