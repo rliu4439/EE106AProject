@@ -24,9 +24,9 @@ The software for this project was written using Python on a Linux machine.
     - Averaging over the two lines to get the middle line.
     - Selecting three 2D way points on the line.
     <p float="left">
-  <img src="images/pasted image 0.png" width="200" />
-  <img src="images/line.png" width="200" /> 
-  <img src="images/point.png" width="200" />
+  <img src="images/pasted image 0.png" width="210" />
+  <img src="images/line.png" width="210" /> 
+  <img src="images/point.png" width="210" />
   
   - 2nd method
     - Using filter function from OpenCV to extract the red(color of the lane) region from the raw image based on  HSV space.
@@ -36,9 +36,9 @@ The software for this project was written using Python on a Linux machine.
     - Averaging over the x coordinates with the same fixed y coordinates to get the 2D way points.
     
     <p float="left">
-  <img src="images/method2_white.png" width="200" />
-  <img src="images/method2_largest.png" width="200" /> 
-  <img src="images/method2_final.png" width="200" />
+  <img src="images/method2_white.png" width="210" />
+  <img src="images/method2_largest.png" width="210" /> 
+  <img src="images/method2_final.png" width="210" />
 
  - Using RealSense API to transform the 2D coordinates into 3D
  - Output: Three 3D waypoints
