@@ -27,7 +27,7 @@ The software for this project was written using Python on a Linux machine.
   <img src="images/pasted image 0.png" width="200" />
   <img src="images/line.png" width="200" /> 
   <img src="images/point.png" width="200" />
-  </p>
+  
   - 2nd method
     - Using filter function from OpenCV to extract the red(color of the lane) region from the raw image based on  HSV space.
     - Removing noisy pixels by finding the biggest connected component based on connected component labeling.
@@ -39,7 +39,7 @@ The software for this project was written using Python on a Linux machine.
   <img src="images/method2_white.png" width="200" />
   <img src="method2_largest.png" width="200" /> 
   <img src="images/method2_final.png" width="200" />
-  </p>
+
  - Using RealSense API to transform the 2D coordinates into 3D
  - Output: Three 3D waypoints
   
