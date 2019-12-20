@@ -30,7 +30,7 @@ The software for this project was written using Python on a Linux machine.
     - Collect all the pixels in the biggest connected component
     - Selecting three fixed y coordinates
     - Averaging over the x coordinates with the same fixed y coordinates to get the 2D way points.
-    <p><img src="images/method2_white.png" width="240" height="auto" style="display:block; margin: 0 auto" ></p> <p><img src="images/method2_largest.png" width="240" height="auto" style="display:block; margin: 0 auto" ></p> <p><img src="images/method2_final.png" width="240" height="auto" style="display:block; margin: 0 auto" ></p>
+    <p><img src="images/method2_white.png" width="240" height="auto" style="display:block; margin: 0 auto" > &rarr; <img src="images/method2_largest.png" width="240" height="auto" style="display:block; margin: 0 auto" > &rarr; <img src="images/method2_final.png" width="240" height="auto" style="display:block; margin: 0 auto" ></p>
  - Using RealSense API to transform the 2D coordinates into 3D
  - Output: Three 3D waypoints
   
