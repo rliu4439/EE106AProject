@@ -12,9 +12,15 @@ We broke our goals down into several tasks we needed to perform:
  - Implementing and MPC controller and control barrier functions(CBF) to follow the track and avoid obstacles.
  - Implementing a traction control algorithm to maximize vehicle traction and acceleration.
 
-## Hardware
-we can put images of our cars and hardware design here.
+## Hardware Architecture
+<p><img src="images/hardware.png" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
 
+## Software Architecture
+<p><img src="images/software.png" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
+
+## Setup
+<p><img src="images/car.jpg" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
+<p><img src="images/laneandcar.jpg" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
 
 ## Lane Tracking
 
