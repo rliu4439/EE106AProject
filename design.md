@@ -14,13 +14,13 @@ we can put images of our cars and hardware design here.
 
 ### Design Criteria
   - The lane tracking algorithm must generate three stable waypoints on the lane for the car to navigate.
-  - The algorithm must be robust and in real-time for the control algorithms.
+  - The algorithm must be robust and in real time for the control algorithms.
 
 ### Main Challenges
   - Easy to be influenced by noisy pixels comes from other stuffs that have the similar color  as our lane.
   - Hard to extract the outliers of lane based on the images with noises.
   - Waypoints might shift out of the lane which leads the race car run out of the track.
-  - Image processing should be in real-time.
+  - Image processing should be in real time.
 
 ### Method Design
   - We would use the filter based on HSV space to extract the line pixels from raw images
