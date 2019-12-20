@@ -31,8 +31,8 @@ The software for this project was written using Python on a Linux machine.
   - 2nd method
     - Using filter function from OpenCV to extract the red(color of the lane) region from the raw image based on  HSV space.
     - Removing noisy pixels by finding the biggest connected component based on connected component labeling.
-    - Collect all the pixels in the biggest connected component
-    - Selecting three fixed y coordinates
+    - Collect all the pixels in the biggest connected component.
+    - Selecting three fixed y coordinates.
     - Averaging over the x coordinates with the same fixed y coordinates to get the 2D way points.
     
     <p float="left">
