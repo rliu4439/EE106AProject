@@ -15,6 +15,7 @@ we can put images of our cars and hardware design here.
 ### Design Criteria
   - The lane tracking algorithm must generate three stable waypoints on the lane for the car to navigate.
   - The algorithm must be robust and in real-time for the control algorithms.
+
 ### Main Challenges
   - Easy to be influenced by noisy pixels comes from other stuffs that have the similar color  as our lane.
   - Hard to extract the outliers of lane based on the images with noises.
