@@ -54,6 +54,21 @@ We started with the robot open autonomous racing (ROAR) platform for the Traxxis
 
 ## Object Detection
 
+### Design Criteria
+ - The object detection algorithm must be able to detect objects in front of the vehicle of any size.
+ - Similar to the lane detection algorithm, it must be robust and run in real time to support the control algorithms.
+ - It must also generate the 3D coordinates of each object it detects. 
+
+### Design
+
+There were originally two possible design choices, one using a trained neural net to detect objects, and a second that would use the depth data and perform image segmentation to determine objects in the image. We decided to use the second approach. This involved getting depth data from the RealSense camera and filtering the pixels based on the depth of each pixel. After performing filtering, the algorithm would need to determine bounding boxes for any remaining pixels and then filter those boxes to determine what objects actually exist.
+
+### Tradeoffs/Design Choices
+
+When deciding between the two options, there were a couple of tradeoffs to consider. With the neural net based approach, this would require gathering a large number of images and labelling the images so that the model could detect objects. The model would also determine more information than we needed, such as what type of object it found. Performing inference with this model would likely require more time and power, slowing down the speed of the control algorithms. However, this approach would likely be more robust in situations with different lighting and would have fewer false positives compared to the depth data/image segmentation approach.
+
+The image segmentation approach was significantly more efficent than the neural net model in terms of both creating the algorithm and running the algorithm. We only needed a few images to test and tune our algorithm, and it ran fairly quickly since we used OpenCV which was optimized for speed. The tasks and filtering were also simplier to perform so it was more efficent. One tradeoff was the robustness of the algorithm, the depth data was prone to having patches of pixels with incorrect depths. For example, some patches of the ground were given a depth of 0.6 meters, while the rest of the ground had a depth of 0 meters. This caused some incorrect bounding boxes to be create, but additional tuning and filtering would remove most of those issues. Since speed was a significant criteria, and a majority of the tradeoffs could be managed, we decided the approach using depth data and image segmentation would be the best approach for object detection.
+
 ## Traction Control
 
 ### Motivation
