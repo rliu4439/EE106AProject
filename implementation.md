@@ -44,4 +44,24 @@ The software for this project was written using Python on a Linux machine.
  - Output: Three 3D waypoints
   
 
+### Obstacle Detection
+- Input: Depth data from a RealSense camera at 30 FPS.
+- Approach
+	- Filter depth data to only keep pixels with a certain depth. 
+	- Determine depth of ground/red lane line. 
+	- Keep all pixels that have a depth greater than the depth of the ground and less than 3 meters. 
+		- This removes some extraneous points due to the carpet
+	- Use OpenCV to create contours and bounding boxes for all remaining pixel groups
+	- Filter the remaining bounding boxes by object position, size, distance, and object height
+		- Filtering by object size and height helps remove some incorrect bounding boxes caused by incorrect depth data.
+
+
+
+    <p float="left">
+  <img src="images/depth_image.png" width="210" />  &rarr;
+  <img src="images/depth_mask.png" width="210" />  &rarr;
+  <img src="images/depth_bounding_boxes.png" width="210" />
+	- Generate 3D location of objects using the RealSense API to convert pixel coordinates and depth to a 3D coordinate
+- Output: List of centers of obstacles detected
+<img src="images/bounding_box_result.png" width="640" />
 ## Complete System Overview
