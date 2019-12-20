@@ -23,7 +23,7 @@ order: 5
 ### Jake Ramirez
 - **Bio**: I'm a 5th year Masters student in Mechanical Engineering interested in electric vehicles.
 
-- **Contributions**: My main contributions included writing the code for the line following controller and integrating team member's code together. I wrote the LQR Controller which solves the Riccati equation for the simplified bicycle model as well as developed our "Smart" PID Controller which was used debug vision issues more easily. I tuned the LQR gains in Simulink and helped create our object avoidance controller. I used prewritten code to determine the reachset for our chosen obstacle size as well as implement a controller with object avoidance capabilities in simulation.
+- **Contributions**: My main contributions included writing the code for the line following controller and integrating team member's code together. I wrote the LQR Controller which solves the Riccati equation for the simplified bicycle model as well as developed our "Smart" PID Controller which was used to debug vision issues more easily. I tuned the LQR gains in Simulink and helped create our object avoidance controller. I used prewritten code to determine the reachset for our chosen obstacle size as well as implement a controller with object avoidance capabilities in simulation.
 
 ### Kevin Chen
 
