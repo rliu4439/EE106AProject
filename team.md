@@ -21,6 +21,9 @@ order: 5
 - **Contributions**: My main task involved creating the object detection system for the car. This involved collecting data, installing the appropriate libraries on the vehicle and designing the algorithm. I used OpenCV to detect objects in the images and used the RealSense API to calculate the real-world position of an object which was also needed for line following. This function would output the coordinate of objects so the controller could avoid them. I also worked on adjustments to the RealSense camera's configuration to improve the depth data output. I helped with the testing and debugging of the controls algorithms used for line following.
 
 ### Jake Ramirez
+- **Bio**: I'm a 5th year Masters student in Mechanical Engineering interested in electric vehicles.
+
+- **Contributions**: My main contributions included writing the code for the line following controller and integrating team member's code together. I wrote the LQR Controller which solves the Riccati equation for the simplified bicycle model as well as developed our "Smart" PID Controller which was used debug vision issues more easily. I tuned the LQR gains in Simulink and helped create our object avoidance controller. I used prewritten code to determine the reachset for our chosen obstacle size as well as implement a controller with object avoidance capabilities in simulation.
 
 ### Kevin Chen
 
