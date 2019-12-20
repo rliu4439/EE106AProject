@@ -6,7 +6,7 @@ order: 1
 --- 
 
 # Design
-## HardWare
+## Hardware
 we can put images of our cars and hardware design here.
 
 
