@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+  {% include mathjax.html %}
   <head>
 
 
@@ -59,7 +60,6 @@ div.content {
 
         {% for page in ppages %}
        <a href= {{ page.filename }} class="btn">{{ page.title }}</a>
-       {% include mathjax.html %}
 		{% endfor %}
 
       {% if site.github.is_project_page %}
