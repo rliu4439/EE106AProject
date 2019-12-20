@@ -15,10 +15,14 @@ High performance vehicles at both the full size and RC size scales are typically
 
 ### Existing Research
 Research into existing traction control algorithms revealed an [IEEE paper](https://ieeexplore-ieee-org.libproxy.berkeley.edu/document/6402343) titled *Model Predictive PID Traction Control Systems for Electric Vehicles* published by Tohru Kawabe. In this paper, Kawabe quantifies wheel slip using the slip ratio $\lambda$ defined as
+
 $$ \frac{V_{\omega}V}{V_\omega} $$
+
 where $V_{\omega}$ is the wheel velocity and $V$ is the vehicle body velocity. Physically, a slip ratio of 0 corresponds to wheel velocity exactly matching body velocity. A positive slip ratio corresponds to wheel velocity exceeding body velocity, such as traction loss during acceleration from a stand still when the torque sent to the tire exceeds the frictional force available. A negative slip ratio corresponds to body velocity exceeding wheel velocity, such as traction loss during high speed cornering when the tire is no longer able to continue rolling and begins sliding.
 The exact relationship between slip ratio and the amount of frictional force that the tire can provide is related through a formula called the Magic-Formula developed through testing data:
-$$\mu(\lambda)=-c_{road}\times 1.1\times(e^{-35\lambda}-e^{-0.35\lambda})$$
+
+$$ \mu(\lambda)=-c_{road}\times 1.1\times(e^{-35\lambda}-e^{-0.35\lambda}) $$
+
 where $\mu$ is the coefficient of friction and $c_\{road}$ is a parameter that depends on the condition of the road being driven on.
 Plotting this equation yields the following graph:
 <p><img src="images/magicformula.gif" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
