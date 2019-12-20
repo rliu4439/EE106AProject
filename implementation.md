@@ -37,7 +37,7 @@ The software for this project was written using Python on a Linux machine.
     
     <p float="left">
   <img src="images/method2_white.png" width="200" />
-  <img src="method2_largest.png" width="200" /> 
+  <img src="images/method2_largest.png" width="200" /> 
   <img src="images/method2_final.png" width="200" />
 
  - Using RealSense API to transform the 2D coordinates into 3D
