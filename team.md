@@ -11,6 +11,9 @@ order: 5
 ### Mike Estrada
 
 ### Lu Yu
+- **Bio**: I'm a 1st year EECS master student interested in robust computer vision and image processing. 
+
+- **Contributions**: My main task involved designing the lane traking algorithm for the car. This involved collecting data, reaserching existing lane traking algorithms, installing the appropriate libraries on the vehicle, designing the algorithms and testing the methods on control algorithms. I came up with two methods to detect the lane and generate the way points by some robust image processing based on OpenCV and translate the 2D coordinates to 3D which can be used by the control algorithms. This function would output the three 3D way points that would be used by the LQR controller. I also helped with the testing and debugging of the controls algorithms used for line following.
 
 ### Ryan Liu
 - **Bio**: I'm a 4th year EECS major interested in machine learning and image processing. 
