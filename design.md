@@ -3,6 +3,7 @@ title: Design
 layout: template
 filename: design
 order: 1
+mathjax: true
 --- 
 
 # Design
