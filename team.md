@@ -10,6 +10,9 @@ order: 5
 
 ### Mike Estrada
 
+- **Bio**: I'm a 1st year PhD student in EECS studying control systems and Robotics.
+
+- **Contributions**: I had three main contributions. Firs,t I was responsible for prototyping and designing the wheel encoders and the associated arduino software in collaboration with Yuri Murakami.  This invovlved the iterative design and 3D printing of encoder disks that were install to the inside of the wheel.
 ### Lu Yu
 - **Bio**: I'm a 1st year EECS master student interested in robust computer vision and image processing. 
 
