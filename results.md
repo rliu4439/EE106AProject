@@ -20,4 +20,4 @@ order: 3
 
 ### Example of wheel slip
 
-{% include youtubePlayer.html id="f4ebHDm4GFc"}
+{% include youtubePlayer.html id="f4ebHDm4GFc" %}
