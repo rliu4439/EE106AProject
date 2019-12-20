@@ -50,6 +50,7 @@ We broke our goals down into several tasks we needed to perform:
     - Fix three y cordinates, then average the x coordinates to get three way points.
  - We finally use a real sense API based on the camera parameters to translate the 2D waypoints into 3D which can be directly used by LQR controller.
 
+## Object Detection
 
 ## Traction Control
 
