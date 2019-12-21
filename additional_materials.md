@@ -8,7 +8,7 @@ mathjax: true
 
 # Additional Materials
 
-All our code can be seen on [Github](https://github.com/rliu4439/EE106AProject).
+All our code can be seen on [Github](https://github.com/rliu4439/EE106AProject). The code used for the car is under the `code` folder.
 
 Libraries Used:
 - [IRG library for ROAR](https://github.com/augcog/ROAR)
@@ -17,7 +17,7 @@ Libraries Used:
 - OpenCV
 - Controlpy
 - SciPy
-- shapely
-- qpsolvers
+- Shapely
+- Qpsolvers
 
 
