@@ -10,7 +10,7 @@ mathjax: true
 
 
 ## Hardware Used and Built
- - Traxxis RC car
+ - Traxxas RC car
  - Jetson Nano computer w/ Linux 18.04
  - Intel RealSense D435i RGB-D camera
  - Arduino Nano with breakout board
@@ -22,7 +22,7 @@ mathjax: true
 
 ## Software
 The software for this project was written using Python on a Linux machine.
-### Lane tracking
+### Lane Tracking
 - Input: Video stream
 - Get 2D way points:
   - 1st method
@@ -72,6 +72,12 @@ The software for this project was written using Python on a Linux machine.
 
 - Generate 3D location of objects using the RealSense API to convert pixel coordinates and depth to a 3D coordinate
 - Output: List of centers of obstacles detected
+
+### Traction Control
+
+In order to maintain a slip ratio of 0.1, a simple proportional controller was implemented. The error term was calculated as the difference between the measured slip ratio using the wheel encoders and the desired slip ratio of 0.1. This was multiplied by a gain \texttt{K_p}, and then added to the desired velocity to produce the modified velocity input in the form of a MotorPWM to send to the car's ESC.
+
+<p><img src="images/traccontrollerdiagram.png" width="600" height="auto" style="display:block; margin: 0 auto" ></p>
 
 <img src="images/bounding_box_result.png" width="1280" />
 ## Complete System Overview

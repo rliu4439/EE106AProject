@@ -30,7 +30,7 @@ Our vehicle is able to successfully follow a red lane line and perform close to 
 
 ### Test Data
 
-<p><img src="images/tracdata.png" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
+<p><img src="images/tracdata.png" width="600" height="auto" style="display:block; margin: 0 auto" ></p>
 
 ## Autonomous Driving
 
