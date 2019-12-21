@@ -8,7 +8,7 @@ mathjax: true
 
 # Additional Materials
 
-All our code can be seen on [Github](https://github.com/rliu4439/EE106AProject). The code used for the car is under the `code` folder.
+All our code can be seen on [Github](https://github.com/rliu4439/EE106AProject). The code used for the car is under the `code` folder. The main code files we used in the final car are `manage.py`, `TracController.py `, and `LQRController.py`.
 
 Libraries Used:
 - [IRG library for ROAR](https://github.com/augcog/ROAR)
