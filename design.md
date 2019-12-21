@@ -30,7 +30,7 @@ Our software relies on the wheel speeds from the wheel encoders and the image an
 ### Sensing
  - Used an Intel RealSense D435i RGB-D camera to estimate coordinates of desired waypoints to send to the controller
  - Custom designed wheel encoders used to independently estimate the velocity of all four wheels as well as the car's overall velocity
- 
+
 ### Actuation
 
 
