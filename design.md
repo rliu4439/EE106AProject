@@ -90,13 +90,13 @@ In both cases, we relied on the RealSense API to generate 3D coordinates from th
 
 ### Design Criteria
 
-- The encoders must be able to accurately and consistently estimate the velocity of the four wheels independently
-- They must be designed so that an off-the-shelf Traxxas RC car can be retrofitted with them with as little modification as possible
-- The velocities of the wheels must be calculated on-board an Arduino Nano
+- The encoders must be able to accurately and consistently estimate the velocity of the four wheels independently.
+- They must be designed so that an off-the-shelf Traxxas RC car can be retrofitted with them with as little modification as possible.
+- The velocities of the wheels must be calculated on-board an Arduino Nano.
 
 ### Design
 
-The wheel encoders were primarily designed to be rapidly prototyped and custom built using a 3D printer in-house. 4 digital line sensors were used as the basis for the encoder system. One line sensor was mounted on the suspension system near each wheel and pointed outward towards an encoder disk printed in white PLA, with alternating sections colored black to trigger the line sensor when the wheel is rotated. This signal is sent to an Arduino Nano mounted on a break-out board that registers these signals and uses the time between subsequent signals to measure the velocity of each wheel. The values are then averaged to estimate the overall body velocity of the car. These values are then passed through a three-step, weighted moving average filter that smooths erroneous readings but still weighs the calculated value toward the latest estimate. Finally the four wheel velocities and the body velocity are sent to the Jetson Nano for use in the PID, LQR, and traction controllers.
+The wheel encoders were primarily designed to be rapidly prototyped and custom built using a 3D printer, in-house. 4 digital line sensors were used as the basis for the encoder system. One line sensor was mounted on the suspension system near each wheel and pointed outward towards an encoder disk printed in white PLA, with alternating sections colored black to trigger the line sensor when the wheel is rotated. This signal is sent to an Arduino Nano mounted on a break-out board that registers these signals and uses the time between subsequent signals to measure the velocity of each wheel. The values are then averaged to estimate the overall body velocity of the car. These values are then passed through a three-step, weighted moving average filter that smooths erroneous readings but still weighs the calculated value toward the latest estimate. Finally the four wheel velocities and the body velocity are sent to the Jetson Nano for use in the PID, LQR, and traction controllers.
 
 ### Main Challenges
 
