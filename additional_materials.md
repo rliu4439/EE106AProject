@@ -11,11 +11,13 @@ mathjax: true
 All our code can be seen on [Github](https://github.com/rliu4439/EE106AProject).
 
 Libraries Used:
+- [IRG library for ROAR](https://github.com/augcog/ROAR)
 - Intel RealSense API
 - NumPy
 - OpenCV
-- [IRG library for ROAR](https://github.com/augcog/ROAR)
 - Controlpy
 - SciPy
 - shapely
 - qpsolvers
+
+
