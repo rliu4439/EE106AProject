@@ -97,3 +97,8 @@ In order to maintain a slip ratio of 0.1, a simple proportional controller was i
 <p><img src="images/TCdiagram.PNG" width="600" height="auto" style="display:block; margin: 0 auto" ></p>
 
 ## Complete System Overview
+1. Data from the wheel encoders are passed to the Arduino Nano, which calculates the velocities of each wheel. That data is passed to the Jetson Nano. RealSense camera data is also passed into the Jetson Nano.
+2. Given this data, the LQR controller determines the correct MotorPWM and SteeringPWM to keep the car moving along the red lane line and detecting obstacles.
+	- This involves the obstacle detection and lane detection algorithms taking in depth and camera data.
+3. The MotorPWM is passed to the Traction Controller module to prevent the MotorPWM from causing slip.
+4. The SteertingPWM and MotorPWM is passed to the Traxxas XL-5 electronic speed controller (ESC) to control all the motors.
