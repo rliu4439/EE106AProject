@@ -24,7 +24,7 @@ Our vehicle is able to successfully follow a red lane line and perform close to 
 
 ## Traction Control
 
-### Example of wheel slip
+### Example of Wheel Slip
 
 {% include youtubePlayer.html id="f4ebHDm4GFc" %}
 
