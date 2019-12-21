@@ -9,7 +9,7 @@ mathjax: true
 # Implementation
 
 
-## Hardware Used and Built
+## Hardware
  - Traxxas RC car
  - Jetson Nano computer w/ Linux 18.04
  - Intel RealSense D435i RGB-D camera
@@ -18,7 +18,7 @@ mathjax: true
  - Dremel D45 3D printer
  - Custom encoder mounts and disks
 
-## Parts of Design
+ <p><img src="images/encoder.PNG" width="600" height="auto" style="display:block; margin: 0 auto" ></p>
 
 ## Software
 The software for this project was written using Python on a Linux machine.
