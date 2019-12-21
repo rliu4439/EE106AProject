@@ -96,6 +96,8 @@ In order to maintain a slip ratio of 0.1, a simple proportional controller was i
 
 <p><img src="images/TCdiagram.PNG" width="600" height="auto" style="display:block; margin: 0 auto" ></p>
 
+The traction controller was tested by sending a large, constant MotorPWM value to the ESC and measuring the resulting slip ratio at each of the wheels. These values were also written to a CSV file for post processing.
+
 ## Complete System Overview
 1. Data from the wheel encoders are passed to the Arduino Nano, which calculates the velocities of each wheel. That data is passed to the Jetson Nano. RealSense camera data is also passed into the Jetson Nano.
 2. Given this data, the LQR controller determines the correct MotorPWM and SteeringPWM to keep the car moving along the red lane line and detecting obstacles.
