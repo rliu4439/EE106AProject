@@ -73,6 +73,23 @@ When deciding between the two options, there were a couple of tradeoffs to consi
 
 The image segmentation approach was significantly more efficent than the neural net model in terms of both creating the algorithm and running the algorithm. We only needed a few images to test and tune our algorithm, and it ran fairly quickly since we used OpenCV which was optimized for speed. The tasks and filtering were also simplier to perform so it was more efficent. One tradeoff was the robustness of the algorithm, the depth data was prone to having patches of pixels with incorrect depths. For example, some patches of the ground were given a depth of 0.6 meters, while the rest of the ground had a depth of 0 meters. This caused some incorrect bounding boxes to be create, but additional tuning and filtering would remove most of those issues. Since speed was a significant criteria, and a majority of the tradeoffs could be managed, we decided the approach using depth data and image segmentation would be the best approach for object detection.
 
+## Wheel Encoders
+
+### Design Criteria
+
+ - The encoders must be able to accurately and consistantly estimate the velocity of the four wheels independently
+ - They must be designed so that an off-the-shelf Traxxis RC car can be retrofitted with them with as little modification as possible
+ - The velocities of the wheels must be calculated on-board an Arduino Nano
+
+### Design 
+
+The wheel encoders were primarily designed to be rapidly prototyped and custom built using a 3D printer in-house. 4 digital line sensors were used as the basis for the encoder system. One line sensor was mounted on the suspension system near each wheel and pointed outward towards an encoder disk printed in white PLA, with alternating sections colored black to trigger the line sensor when the wheel is rotated. This signal is sent to an Arduino Nano mounted on a break-out board that registers these signals and uses the time between subsequent signals to measure the velocity of each wheel.  The values are then averaged to estiamte the overall body velocity of the car.  These values are then passed through a three-step, weighted moving average filter that smooths erroneous readings but still weighs the calculated value toward the latest estimate. Finally the four wheel velocities and the body velocity are sent to the Jetson Nano for use in the PID, LQR, and traction controllers.
+
+### Main Challenges
+The primary challenge in this part of the project was balancing the first two design criteria above. The encoders were originally designed with the line sensors' optimal measuring distance as 5mm. In practice, we observed the most consistant performance with a measuring distance of roughly 2 cm. This forced multiple redesigns of the encoder disks and made it very difficult to fit the disks, and wheels on the cars axles.
+
+Another challenge was the relatively low precision 3D printer used to build the custom pieces. Often times pieces that were designed to a certain specification would have rough edges or imprecise angles, causing us to manually cut, file and force them into shape.
+
 ## Traction Control
 
 ### Motivation
