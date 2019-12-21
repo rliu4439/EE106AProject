@@ -23,7 +23,7 @@ Our finished solution met most of our design criteria. We were able to build a v
 
 ## Future Work and Improvements
 
-We would like to iterate on and refine the encoder design in order to improve it's accuracy and reliability. Future iterations could also improve upon the precision for wheel velocity measurements. We would also like to fully implement and tune MPC using QP formulation and the CBF constraints. 
+We would like to iterate on and refine the encoder design in order to improve it's accuracy and reliability. Future iterations could also improve upon the precision for wheel velocity measurements. We would also like to fully implement and tune MPC using QP formulation and the CBF constraints. Additional testing could also be done with the traction controller to ensure that slip ratio is effectively controlled in cornering situations, as our testing was limited to straight line acceleration.
 
 Further work could include having a dynamic controller that would allow seamless hand-off to a human operator. This would allow the car to drive autonomously until a human operator requests that the controls be passes to them. Even in this scenario, some functionality such as object detection and avoidance would be active to prevent the human driver from driving into obstacles like a wall.
 
