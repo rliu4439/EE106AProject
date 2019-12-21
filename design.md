@@ -90,7 +90,7 @@ The primary challenge in this part of the project was balancing the first two de
 
 Another challenge was the relatively low precision 3D printer used to build the custom pieces. Often times pieces that were designed to a certain specification would have rough edges or imprecise angles, causing us to manually cut, file and force them into shape.
 
-<p><img src="images/encoder.png" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
+<p><img src="images/encoder.PNG" width="480" height="auto" style="display:block; margin: 0 auto" ></p>
 ## Traction Control
 
 ### Motivation
