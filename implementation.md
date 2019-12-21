@@ -14,7 +14,7 @@ mathjax: true
  - Jetson Nano computer w/ Linux 18.04
  - Intel RealSense D435i RGB-D camera
  - Arduino Nano with breakout board
- - Digital line sensors
+ - SparkFun QRE1113 Line Sensor
  - Dremel D45 3D printer
  - Custom encoder mounts and disks
 
