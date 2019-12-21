@@ -75,7 +75,7 @@ The software for this project was written using Python on a Linux machine.
 
 ### Traction Control
 
-In order to maintain a slip ratio of 0.1, a simple proportional controller was implemented. The error term was calculated as the difference between the measured slip ratio using the wheel encoders and the desired slip ratio of 0.1. This was multiplied by a gain \texttt{K_p}, and then added to the desired velocity to produce the modified velocity input in the form of a MotorPWM to send to the car's ESC.
+In order to maintain a slip ratio of 0.1, a simple proportional controller was implemented. The error term was calculated as the difference between the measured slip ratio using the wheel encoders and the desired slip ratio of 0.1. This was multiplied by a gain $K_p$, and then added to the desired velocity to produce the modified velocity input in the form of a MotorPWM to send to the car's ESC.
 
 <p><img src="images/traccontrollerdiagram.png" width="600" height="auto" style="display:block; margin: 0 auto" ></p>
 
