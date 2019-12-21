@@ -11,7 +11,7 @@ mathjax: true
 
 ## Hardware
  - Traxxas RC car
- - Jetson Nano computer w/ Linux 18.04
+ - Jetson Nano computer w/ Ubuntu 18.04
  - Intel RealSense D435i RGB-D camera
  - Arduino Nano with breakout board
  - SparkFun QRE1113 Line Sensor
