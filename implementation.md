@@ -74,7 +74,7 @@ The software for this project was written using Python on a Linux machine.
 - Output: List of centers of obstacles detected
 
 
-<img src="images/bounding_box_result.png" width="1280" />
+<img src="images/QP.png" width="1280" />
 
 ### Controllers
 
